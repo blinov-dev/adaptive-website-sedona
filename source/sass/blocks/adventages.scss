@@ -1,0 +1,81 @@
+// Ьлок преимуществ
+.adventages {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Основное преимущество
+.adventage {
+  width: 400px;
+  display: flex;
+  background: #81b3d2;
+}
+
+.adventages__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventage__container {
+  width: 310px;
+  color: #fff;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+.adventage__title {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.adventage__number {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.adventage__description {
+  color: #fff;
+}
+
+.adventage-img {
+  flex-grow: 1;
+}
+
+// Основное преимущество без картинки в строке
+.adventage-no-img {
+  background: #eee;
+  .adventage__title {
+    color: #000;
+  }
+  .adventage__number {
+    color: #333;
+  }
+  .adventage__description {
+    color: #333;
+  }
+}
+
+// Дополнительные преимущества
+.adventages__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additional-adventages-list__item {
+  width: 400px;
+}
+
+.additional-adventage {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59px;
+}
+
+.additional-adventage__icon {
+  margin-bottom: 25px;
+  fill: #81b3d2;
+}

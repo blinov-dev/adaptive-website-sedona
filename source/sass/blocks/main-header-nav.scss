@@ -1,0 +1,37 @@
+.page-header {
+  position: relative;
+  display: flex;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -93px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-nav__item {
+  min-width: 239px;
+  min-height: 56px;
+  &:nth-child(2) {
+    margin-right: 244px;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  color: #000;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 20px;
+}

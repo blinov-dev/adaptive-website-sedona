@@ -1,1 +1,22 @@
+// Обнуление
+@import "global/normalize.scss";
+
+// Шрифты
+@import "global/fonts.scss";
+
+// Глобальные стили
+@import "global/global.scss";
+
+// Основная навигация на страницах
+@import "blocks/main-header-nav.scss";
+
+// Превью на каждой странице
+@import "blocks/main-preview.scss";
+
+// Стили для основных текстовых блоков
+@import "blocks/text-block.scss";
+
+// Блок с преимуществами
+@import "blocks/adventages.scss";
+
 

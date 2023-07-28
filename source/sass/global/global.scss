@@ -1,0 +1,37 @@
+/* Для скрытия элементов со страницы, но видимости для скринридеров */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Основные стили боди и html */
+html {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fff;
+  color: black;
+}
+
+/* Прижатие футера к низу страницы */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

@@ -1,2 +1,254 @@
+@charset "UTF-8";
+/* Обнуление */
+body {
+  margin: 0;
+}
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-style: none;
+}
+
+/* Шрифты */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/source/fonts/ptsans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/source/fonts/ptsansbold.woff2") format("woff2");
+}
+/* Для скрытия элементов со страницы, но видимости для скринридеров */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Основные стили боди и html */
+html {
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #fff;
+  color: black;
+}
+
+/* Прижатие футера к низу страницы */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page-header {
+  position: relative;
+  display: flex;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -93px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-nav__item {
+  min-width: 239px;
+  min-height: 56px;
+}
+.main-nav__item:nth-child(2) {
+  margin-right: 244px;
+}
+
+.main-nav__link {
+  display: block;
+  color: #000;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.main-preview {
+  height: 518px;
+  text-align: center;
+  background-color: #615048;
+  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-preview__img {
+  margin-top: 78px;
+}
+
+.text-block {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+.text-block__title {
+  color: #000;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.text-block__description {
+  color: #333;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.adventages {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventage {
+  width: 400px;
+  display: flex;
+  background: #81b3d2;
+}
+
+.adventages__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventage__container {
+  width: 310px;
+  color: #fff;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+
+.adventage__title {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.adventage__number {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.adventage__description {
+  color: #fff;
+}
+
+.adventage-img {
+  flex-grow: 1;
+}
+
+.adventage-no-img {
+  background: #eee;
+}
+.adventage-no-img .adventage__title {
+  color: #000;
+}
+.adventage-no-img .adventage__number {
+  color: #333;
+}
+.adventage-no-img .adventage__description {
+  color: #333;
+}
+
+.adventages__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additional-adventages-list__item {
+  width: 400px;
+}
+
+.additional-adventage {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 59px;
+}
+
+.additional-adventage__icon {
+  margin-bottom: 25px;
+  fill: #81b3d2;
+}
 /*# sourceMappingURL=style.css.map */
