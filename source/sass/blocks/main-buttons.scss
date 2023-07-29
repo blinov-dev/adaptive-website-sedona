@@ -1,0 +1,25 @@
+// Стили для основных кнопок
+.button {
+  background-color: #81b3d2;
+  color: #fff;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 15px 100px;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    color: rgba(#fff,  0.3);
+    background-color: #5496bd;
+  }
+}
+
+.button--disabled {
+  background-color: #E5E5E5;
+  pointer-events:none;
+}

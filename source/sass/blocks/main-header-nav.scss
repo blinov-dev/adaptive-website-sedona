@@ -4,6 +4,7 @@
 }
 
 .main-logo {
+  max-height: 97px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -34,4 +35,14 @@
   text-transform: uppercase;
   text-align: center;
   padding: 15px 20px;
+  &:hover {
+    color: #81B3D2;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--current-link {
+  color: #766357;
 }

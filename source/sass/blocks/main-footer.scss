@@ -1,0 +1,101 @@
+// Стили основного футера
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 46px 0;
+}
+
+// Ссылка на офф.страницу седоны
+.sedona-link {
+  color: #000;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 123.81% */
+  text-transform: uppercase;
+  &:hover {
+    color: #81B3D2;
+  }
+  &:active {
+      opacity: 0.3;
+  }
+}
+
+// Ссылки на соцсети
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+    .socials-icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.socials-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+// Ссылка на htmlacademy
+.developer__link {
+  position: relative;
+  color: #000;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-right: 40px;
+  &:hover {
+    .developer-icon {
+      fill: #81B3D2;
+    }
+  }
+  &:active {
+    .developer-icon {
+      fill: #000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.developer-icon {
+  position: absolute;
+  fill: #000;
+  right: 0;
+  top: 50%;
+  margin-top: -17px;
+}
+
