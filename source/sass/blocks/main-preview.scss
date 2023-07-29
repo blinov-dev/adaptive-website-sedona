@@ -1,3 +1,4 @@
+// Превью у главной страницы
 .main-preview {
   height: 518px;
   text-align: center;
@@ -8,4 +9,18 @@
 
 .main-preview__img {
   margin-top: 78px;
+}
+
+// Превью у каталога
+.main-preview-catalog {
+  height: 300px;
+  text-align: center;
+  background-color: rgb(97 80 72 / 100%);
+  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.main-preview-catalog__img {
+  margin-top: 105px;
 }

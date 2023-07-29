@@ -1,0 +1,91 @@
+// Секция каталога
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Начальный блок с текстом
+.catalog-header {
+  margin-top: 100px;
+  margin-bottom: 67px;
+}
+
+// Список карточек фотографий
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Карточка фотографии
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+// Информация к фотографии
+.card__info {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  background-color: rgba(#000, 0.3);
+}
+
+.card-description {
+  margin: 15px 20px;
+}
+
+.card-description__title {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  text-transform: uppercase;
+}
+
+.card-description__author {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-like {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.card-like__button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.button-like-icon {
+  fill: #fff;
+}
+
+.card-like__number {
+  color: #fff;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+// Конечный блок с текстом
+.catalog-footer {
+  margin-top: 63px;
+  margin-bottom: 66px;
+}
