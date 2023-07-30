@@ -1,0 +1,250 @@
+// Стили для страницы с формой
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Стили для формы
+.form-header {
+  margin-top: 114px;
+  margin-bottom: 56px;
+}
+
+// Стили для самой формы (Сетка гридами)
+.main-form {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-flow: dense;
+}
+
+// Стили для Фиелдсетов
+.group-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin-bottom: 50px;
+}
+
+// Стили для Легенды у фиелдсетов
+.group-inputs__title {
+  color: #000;
+  font-family: PT Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 123.81% */
+  text-transform: uppercase;
+  margin-left: 80px;
+  margin-bottom: 55px;
+}
+
+// Позиционирование у внутри фиелдсетов
+.group-inputs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+// Позиционирование инпутов внутри лейбла
+.form-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+// Стили для Лейбла у инпутов
+.form-input__title {
+  color: #333;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+// Общие стили для инпутов в форме
+.input {
+  flex-grow: 1;
+  color: #000;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+  background-color: #f2f2f2;
+  border: none;
+  padding: 16px 0;
+  padding-left: 20px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:active {
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+    background-color: #fff;
+  }
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+    background-color: #fff;
+  }
+}
+
+// Стили для инпутов с ФИО
+.group-names {
+  justify-content: end; // Для десктопа и планшета
+  // grid-column: 1 / 3; // Для мобильного формата
+}
+
+// Стили для инпутов с Контактами
+.group-contacts {
+  grid-column: 1 / 3;
+  & .group-inputs__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  & .group-inputs__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+// Позиционирование значка для контактов
+.form-input__container {
+  position: relative;
+  margin-right: 58px;
+}
+.form-input__input-icon {
+  position: absolute;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+.input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #010101;
+}
+
+// Стили для инпутов с Впечатлениями
+.group-impression {
+  order: -1; // Для десктопа и планшета
+  //grid-column: 1 / 3; // Для мобильного формата
+}
+
+// Кастомная стилизация инпутов Радио и Чекбоксов
+.form-input__input-mark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  margin-right: 23px;
+  cursor: pointer;
+  z-index: 1;
+  &.radio-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}
+
+// Состояния кастомных инпутов Радио и Чекбоксов
+.label-radio,
+.label-checkbox {
+  &:hover .radio-mark,
+  &:hover .checkbox-mark {
+    background-color: #e5e5e5;
+  }
+  &:active .radio-mark,
+  &:active .checkbox-mark {
+    background-color: #d5d5d5;
+  }
+}
+
+// Кастомная стилизация инпутов Радио и Чекбоксов при Чекед
+.form-input__radio:checked + .radio-mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #333;
+  z-index: 3;
+}
+
+// Кастомная стилизация инпутов Радио и Чекбоксов при Чекед
+.form-input__checkbox:checked + .checkbox-mark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 24px;
+  height: 16px;
+  background-image: url(/img/form/icon-input-checkbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+// Стили для инпутов с Посещенными местами
+.group-place-visited {
+  grid-column: 1 / 3;
+  & .group-inputs__title {
+    text-align: center;
+    margin-left: 0;
+  }
+  & .group-inputs__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+// Стили для инпутов с отзывом
+.group-review {
+  grid-column: 1 / 3;
+  & .group-inputs__title {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.textarea-input {
+  box-sizing: border-box;
+  width: 960px;
+  height: 160px;
+  resize: none;
+  padding: 24px;
+}
+
+// Стили для инпутов с Кнопками
+.group-buttons {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-flow: dense;
+  align-items: center;
+}
+
+.required-fields {
+  text-align: end;
+}

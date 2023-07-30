@@ -24,3 +24,17 @@
 .main-preview-catalog__img {
   margin-top: 105px;
 }
+
+// Превью у формы
+.main-preview-form {
+  height: 300px;
+  text-align: center;
+  background-color: rgb(97 80 72 / 100%);
+  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.main-preview-form__img {
+  margin-top: 105px;
+}

@@ -28,8 +28,17 @@
   border: none;
   border-radius: 50%;
   background-color: #fff;
-  margin-top: -5.5px;
+  top: -5.5px;
   left: 111px;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  &:active {
+      opacity: 0.3;
+  }
 }
 
 .video-player__list {
@@ -55,12 +64,21 @@
   }
 }
 
-
 .player-control {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  &:hover {
+    .player-control__icon {
+      opacity: 0.6;
+    }
+  }
+  &:active {
+    .player-control__icon {
+      opacity: 0.3;
+    }
+  }
 }
-
 
 .player-control__icon {
   fill: #fff;
