@@ -39,4 +39,8 @@
 
 
 // Стили для формы
-@import "blocks/form/form.scss"
+@import "blocks/form/form.scss";
+// Модальное окно с положительным результатом
+@import "blocks/form/form-modal-accepted.scss";
+// Модальное окно с ошибкой
+@import "blocks/form/form-modal-error.scss";
