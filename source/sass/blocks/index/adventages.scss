@@ -4,28 +4,66 @@
   flex-direction: column;
 }
 
+.adventages-header-container {
+  position: relative;
+  margin-bottom: 15px;
+  @media (min-width: $width-mobile) {
+    &::after {
+      position: absolute;
+      content: "";
+      min-width: 100%;
+      height: 37px;
+      bottom: -45px;
+      background-image: url("/img/text-block/white-decor.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+  @media (min-width: $width-tablet) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.adventages-header {
+  margin-bottom: 0;
+}
+
 .adventages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.adventages__item {
   display: flex;
   flex-wrap: wrap;
 }
 
 // Основное преимущество
 .adventage {
-  width: 400px;
+  width: 100%;
   display: flex;
   background: #81b3d2;
-}
-
-.adventages__item {
-  display: flex;
-  flex-wrap: wrap;
+  @media (min-width: $width-tablet) {
+    width: 256px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
 }
 
 .adventage__container {
-  width: 310px;
+  width: 282px;
   color: #fff;
   margin-top: 45px;
   margin-bottom: 55px;
+  @media (min-width: $width-tablet) {
+    width: 192px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
 }
 .adventage__title {
   margin-bottom: 10px;
@@ -39,8 +77,16 @@
   color: #fff;
 }
 
+//  ЗАКОНЧИЛ ТУТ
 .adventage-img {
-  flex-grow: 1;
+  width: 100%;
+  background-color: #eee;
+  @media (min-width: $width-tablet) {
+    width: 192px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
 }
 
 // Основное преимущество без картинки в строке
@@ -59,8 +105,8 @@
 
 // Дополнительные преимущества
 .adventages__additional-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3fr);
 }
 
 .additional-adventages-list__item {

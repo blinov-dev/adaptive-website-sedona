@@ -1,14 +1,31 @@
 // Превью у главной страницы
 .main-preview {
-  height: 518px;
+  height: 389px;
   text-align: center;
   background-color: rgb(97 80 72 / 100%);
-  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-image: url("/img/main-preview/main-preview-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @media (min-width: $width-tablet) {
+    height: 518px;
+  }
+  @media (min-width: $width-desktop) {
+  }
 }
 
 .main-preview__img {
-  margin-top: 78px;
+  margin-top: 90px;
+  width: 300px;
+  height: 200px;
+  @media (min-width: $width-tablet) {
+    margin-top: 77px;
+    width: 460px;
+    height: 350px;
+  }
+  @media (min-width: $width-desktop) {
+    margin-top: 78px;
+  }
 }
 
 // Превью у каталога
@@ -16,13 +33,19 @@
   height: 300px;
   text-align: center;
   background-color: rgb(97 80 72 / 100%);
-  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-image: url("/img/main-preview/main-preview-bg.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
 .main-preview-catalog__img {
-  margin-top: 105px;
+  margin-top: 90px;
+  @media (min-width: $width-tablet) {
+    margin-top: 78px;
+  }
+  @media (min-width: $width-desktop) {
+    margin-top: 105px;
+  }
 }
 
 // Превью у формы
@@ -30,11 +53,17 @@
   height: 300px;
   text-align: center;
   background-color: rgb(97 80 72 / 100%);
-  background-image: url("/img/main-preview/main-preview-bg_desktop.jpg");
+  background-image: url("/img/main-preview/main-preview-bg.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
 .main-preview-form__img {
-  margin-top: 105px;
+  margin-top: 90px;
+  @media (min-width: $width-tablet) {
+    margin-top: 78px;
+  }
+  @media (min-width: $width-desktop) {
+    margin-top: 105px;
+  }
 }

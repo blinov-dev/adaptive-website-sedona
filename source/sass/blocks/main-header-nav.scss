@@ -1,27 +1,50 @@
+// Основное меню навигации
 .page-header {
   position: relative;
   display: flex;
+  height: 56px;
 }
 
 .main-logo {
-  max-height: 97px;
+  width: 102px;
+  height: 84px;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -93px;
+  margin-left: -50px;
+  background-image: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  @media (min-width: $width-tablet) {
+  }
+  @media (min-width: $width-desktop) {
+    background-image: url(/img/logo-desktop.svg);
+    width: 187px;
+    height: 97px;
+    margin-left: -93px;
+  }
 }
 
 .main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .main-nav__item {
-  min-width: 239px;
-  min-height: 56px;
-  &:nth-child(2) {
-    margin-right: 244px;
+  // height: 56px;
+  display: none;
+  @media (min-width: $width-tablet) {
+    display: block;
+    width: 153px;
+    &:nth-child(2) {
+      margin-right: 153px;
+    }
+  }
+  @media (min-width: $width-desktop) {
+    width: 239px;
+    &:nth-child(2) {
+      margin-right: 244px;
+    }
   }
 }
 
@@ -34,12 +57,18 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 20px;
+  padding: 5px 10px;
   &:hover {
-    color: #81B3D2;
+    color: #81b3d2;
   }
   &:active {
     opacity: 0.3;
+  }
+  @media (min-width: $width-tablet) {
+    padding: 15px 15px;
+  }
+  @media (min-width: $width-desktop) {
+    padding: 15px 20px;
   }
 }
 
