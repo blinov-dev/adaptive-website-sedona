@@ -5,6 +5,8 @@
 }
 
 .adventages-header-container {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-bottom: 15px;
   @media (min-width: $width-mobile) {
@@ -28,12 +30,14 @@
 }
 
 .adventages-header {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 0;
 }
 
 .adventages__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .adventages__item {
   display: flex;
@@ -44,6 +48,7 @@
 .adventage {
   width: 100%;
   display: flex;
+  justify-content: center;
   background: #81b3d2;
   @media (min-width: $width-tablet) {
     width: 256px;
@@ -54,12 +59,14 @@
 }
 
 .adventage__container {
-  width: 282px;
+  min-width: 100%;
   color: #fff;
+  margin: 0;
   margin-top: 45px;
   margin-bottom: 55px;
   @media (min-width: $width-tablet) {
     width: 192px;
+    margin-bottom: 0;
   }
   @media (min-width: $width-desktop) {
     width: 400px;
@@ -77,8 +84,8 @@
   color: #fff;
 }
 
-//  ЗАКОНЧИЛ ТУТ
 .adventage-img {
+  flex: 1 0 auto;
   width: 100%;
   background-color: #eee;
   @media (min-width: $width-tablet) {
@@ -88,6 +95,11 @@
     width: 400px;
   }
 }
+
+// // // // // // // // // // Закончил ьздесь
+
+
+
 
 // Основное преимущество без картинки в строке
 .adventage-no-img {
@@ -105,9 +117,20 @@
 
 // Дополнительные преимущества
 .adventages__additional-list {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3fr);
+  grid-template-columns: 1fr;
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: $width-desktop) {
+    width: 400px;
+  }
 }
+
+
+
+
 
 .additional-adventages-list__item {
   width: 400px;

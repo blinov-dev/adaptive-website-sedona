@@ -1,6 +1,6 @@
 // Стили для основных текстовых блоков
 .text-block {
-  width: 285px;
+  min-width: 285px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -8,12 +8,11 @@
   margin-bottom: 41px;
   text-align: center;
   @media (min-width: $width-tablet) {
-    width: 520px;
+    max-width: 520px;
     margin-top: 48px;
     margin-bottom: 41px;
   }
   @media (min-width: $width-desktop) {
-    width: 483px;
     margin-top: 55px;
     margin-bottom: 41px;
   }
