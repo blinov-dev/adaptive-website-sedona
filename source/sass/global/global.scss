@@ -29,10 +29,10 @@ body {
   background-color: #fff;
   color: #000;
   @media (min-width: $width-tablet) {
-    max-width: 768px;
+    min-width: 768px;
   }
   @media (min-width: $width-desktop) {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 

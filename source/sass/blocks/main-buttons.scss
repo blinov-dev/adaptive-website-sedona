@@ -10,7 +10,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  padding: 15px 100px;
+  padding: 15px 30px;
   border: none;
   cursor: pointer;
   &:hover {
@@ -19,6 +19,12 @@
   &:active {
     color: rgba(#fff,  0.3);
     background-color: #5496bd;
+  }
+  @media (min-width: $width-tablet) {
+    padding: 15px 100px;
+  }
+  @media (min-width: $width-desktop) {
+
   }
 }
 
