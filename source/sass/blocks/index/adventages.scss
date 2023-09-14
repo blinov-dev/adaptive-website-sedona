@@ -1,7 +1,8 @@
 // Ьлок преимуществ
 .adventages {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .adventages-header-container {
@@ -33,6 +34,7 @@
     display: none;
   }
   margin-top: 32px;
+  margin-bottom: 20px;
   @media (min-width: $width-tablet) {
     br {
       display: block;
@@ -50,38 +52,53 @@
   margin-bottom: 20px;
 }
 
+
+//  ЗАКОНЧИЛ ТУТ
 .adventages__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "adventage--one"
+  "adventage--two"
+  "adventage--three"
+  "adventage--four"
+  "adventage--five"
+  "adventage--six"
 }
+
+
+
+
 .adventages__item {
   display: flex;
   flex-wrap: wrap;
 }
 
-
-
 // Основное преимущество
 .adventage {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background: #81b3d2;
-  &:first-child {
-    padding-top: 60px;
+  &.first-adventage {
+    padding-top: 20px;
   }
   br {
     display: none;
   }
   &.change-position {
     order: -1;
-   }
-   @media (min-width: $width-tablet) {
+  }
+  @media (min-width: $width-tablet) {
     &.change-position {
       order: 0;
-     }
-   }
+    }
+    &.first-adventage {
+      padding-top: 0;
+    }
+  }
   @media (min-width: $width-tablet) {
     max-width: 256px;
     br {
@@ -96,13 +113,8 @@
   }
 }
 
-
-
-.adventage__container {
-  margin-top: 40px;
-}
-
 .adventage__title {
+  margin-top: 40px;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -115,10 +127,21 @@
   margin-bottom: 30px;
 }
 
-.adventage-img {
+.adventage__img {
   flex: 1 1 auto;
   width: 192px;
   background-color: #eee;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.img-city {
+    background-image: url("/img/adventages/photo-city.jpg");
+    background-position: 75%;
+  }
+  &.img-bridge {
+    background-image: url("/img/adventages/photo-bridge.jpg");
+    background-position: 50%;
+  }
 }
 
 // Основное преимущество без картинки в строке
@@ -148,26 +171,29 @@
 .additional-adventages__item {
   display: flex;
   flex-direction: column;
+  &:nth-child(2) {
+    margin-bottom: 35px;
+  }
   &.change-position {
     order: 3;
-   }
-   @media (min-width: $width-tablet) {
+  }
+  @media (min-width: $width-tablet) {
     &.change-position {
       order: 0;
-     }
-   }
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
 }
-
 
 .additional-adventage {
   margin-top: 35px;
-  margin-bottom: 26px;
   margin-left: 70px;
   text-align: left;
   @media (min-width: $width-tablet) {
     text-align: center;
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 60px;
   }
   @media (min-width: $width-desktop) {
@@ -249,4 +275,13 @@
   }
   @media (min-width: $width-desktop) {
   }
+}
+
+.search__title {
+  margin-top: 33px;
+  margin-bottom: 20px;
+}
+
+.search__description {
+  margin-bottom: 30px;
 }

@@ -1,9 +1,15 @@
 // Стили основного футера
 .page-footer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  padding: 46px 0;
+  margin: 30px 20px;
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (min-width: $width-desktop) {
+  }
 }
 
 // Ссылка на офф.страницу седоны
@@ -16,11 +22,17 @@
   font-weight: 700;
   line-height: 26px; /* 123.81% */
   text-transform: uppercase;
+  margin-bottom: 34px;
   &:hover {
-    color: #81B3D2;
+    color: #81b3d2;
   }
   &:active {
-      opacity: 0.3;
+    opacity: 0.3;
+  }
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
+  @media (min-width: $width-desktop) {
   }
 }
 
@@ -28,7 +40,14 @@
 .socials {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
+  @media (min-width: $width-desktop) {
+  }
 }
+
 
 .socials__item {
   width: 46px;
@@ -80,7 +99,7 @@
   padding-right: 40px;
   &:hover {
     .developer-icon {
-      fill: #81B3D2;
+      fill: #81b3d2;
     }
   }
   &:active {
@@ -98,4 +117,3 @@
   top: 50%;
   margin-top: -17px;
 }
-
