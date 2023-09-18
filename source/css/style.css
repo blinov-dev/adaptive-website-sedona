@@ -513,6 +513,7 @@ body {
 
 .adventages__list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .adventages__item {
@@ -520,6 +521,13 @@ body {
   flex-wrap: wrap;
 }
 
+.adventage--big {
+  grid-column: 1/4;
+}
+
+.adventage--small {
+  grid-column: 1/4;
+}
 .adventage {
   width: 100%;
   display: flex;

@@ -56,11 +56,23 @@
 //  ЗАКОНЧИЛ ТУТ
 .adventages__list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .adventages__item {
 display: flex;
 flex-wrap: wrap;
+}
+
+.adventage--big {
+  grid-column: 1/4;
+}
+
+.adventage--small {
+  grid-column: 1/4;
+  @media (min-width: $width-tablet) {
+  }
 }
 
 
