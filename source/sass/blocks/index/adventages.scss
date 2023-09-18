@@ -56,23 +56,13 @@
 //  ЗАКОНЧИЛ ТУТ
 .adventages__list {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "adventage--one"
-  "adventage--two"
-  "adventage--three"
-  "adventage--four"
-  "adventage--five"
-  "adventage--six"
 }
-
-
-
 
 .adventages__item {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
+
 
 // Основное преимущество
 .adventage {
