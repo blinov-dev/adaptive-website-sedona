@@ -1,8 +1,8 @@
 // Ьлок преимуществ
 .adventages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
 }
 
 .adventages-header-container {
@@ -72,6 +72,7 @@ flex-wrap: wrap;
 .adventage--small {
   grid-column: 1/4;
   @media (min-width: $width-tablet) {
+    grid-column: auto;
   }
 }
 
@@ -102,7 +103,7 @@ flex-wrap: wrap;
     }
   }
   @media (min-width: $width-tablet) {
-    max-width: 256px;
+    max-width: 400px;
     br {
       display: block;
     }
@@ -165,6 +166,7 @@ flex-wrap: wrap;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  background-color: rgba(238, 238, 238, 1);
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -195,7 +197,7 @@ flex-wrap: wrap;
   text-align: left;
   @media (min-width: $width-tablet) {
     text-align: center;
-    margin: 0;
+    margin: 0 20px;
     margin-bottom: 60px;
   }
   @media (min-width: $width-desktop) {
@@ -279,11 +281,6 @@ flex-wrap: wrap;
   }
 }
 
-.search__title {
-  margin-top: 33px;
-  margin-bottom: 20px;
-}
-
-.search__description {
-  margin-bottom: 30px;
+.additional-adventage__description {
+  // padding: 0 20px;
 }

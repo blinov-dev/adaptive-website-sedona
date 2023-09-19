@@ -11,6 +11,8 @@
 
 .search__title {
   font-size: 21px;
+  margin-top: 33px;
+  margin-bottom: 20px;
   @media (min-width: $width-tablet) {
     font-size: 30px;
   }
@@ -20,4 +22,3 @@
   line-height: 24px;
   margin-bottom: 42px;
 }
-
