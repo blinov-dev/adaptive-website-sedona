@@ -11,17 +11,43 @@
   margin-bottom: 67px;
 }
 
+.catalog-header__title {
+  margin-bottom: 20px;
+}
+
+//  ЗДЕСЬ
+
 // Список карточек фотографий
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr;
 }
+
+.catalog__item--big {
+  grid-column: 1/4;
+}
+.catalog__item--small {
+  grid-column: 1/4;
+  @media (min-width: $width-tablet) {
+    grid-column: auto;
+  }
+}
+
 
 // Карточка фотографии
 .card {
   position: relative;
   display: flex;
-  flex-direction: column;
+}
+
+.card--big {
+  .card__img {
+    width: 100%;
+  }
+}
+.card--small {
+  .card__img {
+  }
 }
 
 // Информация к фотографии

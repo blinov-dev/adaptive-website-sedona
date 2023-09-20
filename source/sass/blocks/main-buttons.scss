@@ -1,5 +1,6 @@
 // Стили для основных кнопок
 .button {
+  width: 100%;
   display: block;
   background-color: #81b3d2;
   color: #fff;
@@ -21,7 +22,7 @@
     background-color: #5496bd;
   }
   @media (min-width: $width-tablet) {
-    padding: 15px 100px;
+    max-width: 458px;
   }
   @media (min-width: $width-desktop) {
 
