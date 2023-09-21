@@ -1,25 +1,66 @@
 // Стили для видеопроигрывателя
 .video-player {
+  width: 100%;
+  margin-bottom: 145px;
+}
+
+.video-player__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    width: 650px;
+    height: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 800px;
+  }
+}
+
+.video-player__preview-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/catalog/videplayer_desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  @media (min-width: $width-tablet) {
+  }
+  @media (min-width: $width-desktop) {
+
+  }
 }
 
 .video-player__control-range {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: rgba(#000, 0.6);
-  width: 100%;
-  height: 93px;
+  width: 90%;
+  height: 45px;
   bottom: 0;
+  box-sizing: border-box;
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    height: 93px;
+  }
 }
 .control-time-range {
   position: relative;
-  width: 540px;
+  width: 100%;
   height: 3px;
+  margin: 0 20px;
   background-color: rgba(#fff, 0.3);
+  @media (min-width: $width-tablet) {
+    margin-left: 93px;
+    margin-right: 166px;
+  }
 }
 .control-time-range__toggle {
   position: absolute;
@@ -33,22 +74,32 @@
   z-index: 1;
   cursor: pointer;
   &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
+    opacity: 0.6;
+    cursor: pointer;
+  }
   &:active {
-      opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
 .video-player__list {
   position: absolute;
   width: 100%;
-  height: 93px;
-  bottom: 0;
+  height: 65px;
   display: flex;
   align-items: center;
-  // margin-bottom: -30px; Для мобильной версии
+  margin-bottom: -110px;
+  background-color: #F2F2F2;
+  @media (min-width: $width-tablet) {
+    height: 93px;
+    margin-bottom: 0;
+    bottom: 0;
+    background-color: rgba(#000, 0);
+  }
+  @media (min-width: $width-desktop) {
+
+  }
+
 }
 
 .video-player__item {
@@ -81,5 +132,9 @@
 }
 
 .player-control__icon {
-  fill: #fff;
+  fill: #5C6870;
+  @media (min-width: $width-tablet) {
+    fill: #fff;
+  }
+
 }

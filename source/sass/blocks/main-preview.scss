@@ -30,25 +30,29 @@
 
 // Превью у каталога
 .main-preview-catalog {
-  height: 300px;
+  height: 160px;
   text-align: center;
   background-color: rgb(97 80 72 / 100%);
   background-image: url("/img/main-preview/main-preview-bg.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: right bottom;
   @media (min-width: $width-tablet) {
-    background-position: right bottom;
+    height: 290px;
+  }
+  @media (min-width: $width-desktop) {
+    height: 300px;
   }
 }
 
 .main-preview-catalog__img {
-  margin-top: 100px;
-  height: auto;
+  height: 40px;
+  margin-top: 50px;
   @media (min-width: $width-tablet) {
-
+    height: auto;
+    margin-top: 95px;
   }
   @media (min-width: $width-desktop) {
-    // margin-top: 105px;
+    margin-top: 100px;
   }
 }
 
