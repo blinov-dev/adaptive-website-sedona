@@ -35,7 +35,7 @@
   background-color: rgb(97 80 72 / 100%);
   background-image: url("/img/main-preview/main-preview-bg.jpg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 50% bottom;
   @media (min-width: $width-tablet) {
     height: 290px;
   }
@@ -58,20 +58,28 @@
 
 // Превью у формы
 .main-preview-form {
-  height: 300px;
+  height: 160px;
   text-align: center;
   background-color: rgb(97 80 72 / 100%);
   background-image: url("/img/main-preview/main-preview-bg.jpg");
-  background-position: right bottom;
   background-repeat: no-repeat;
+  background-position: 50% bottom;
+  @media (min-width: $width-tablet) {
+    height: 290px;
+  }
+  @media (min-width: $width-desktop) {
+    height: 300px;
+  }
 }
 
 .main-preview-form__img {
-  margin-top: 90px;
+  height: 40px;
+  margin-top: 50px;
   @media (min-width: $width-tablet) {
-    margin-top: 78px;
+    height: auto;
+    margin-top: 95px;
   }
   @media (min-width: $width-desktop) {
-    margin-top: 105px;
+    margin-top: 100px;
   }
 }

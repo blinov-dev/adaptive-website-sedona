@@ -21,6 +21,21 @@
 
 .catalog-header__title {
   margin-bottom: 20px;
+  font-size: 18px;
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+  }
+}
+
+.catalog-header__description {
+  br {
+    display: none;
+  }
+  @media (min-width: $width-tablet) {
+    br {
+      display: block;
+    }
+  }
 }
 
 // Список карточек фотографий
@@ -28,6 +43,29 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.catalog__item {
+  margin: 0 20px;
+  margin-bottom: 30px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 108%;
+    height: 3px;
+    bottom: 0;
+    left: -20px;
+    background-color: #E5E5E5;
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+  @media (min-width: $width-tablet) {
+    margin: 0;
+
+  }
+}
+
 
 .catalog__item--big {
   flex: 1 1 1200px; /* изначальное значени для все элементов */
@@ -43,7 +81,6 @@
     }
   }
 }
-
 
 // Карточка фотографии
 .card {
@@ -67,7 +104,7 @@
     width: 100%;
     max-height: 280px;
     object-fit: cover;
-      @media (min-width: $width-tablet) {
+    @media (min-width: $width-tablet) {
       height: 100%;
     }
   }
@@ -77,13 +114,16 @@
 .card__info {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   bottom: 0;
-  background-color: rgba(#000, 0.3);
   @media (min-width: $width-tablet) {
+    flex-direction: row;
+    background-color: #F2F2F2;
   }
   @media (min-width: $width-desktop) {
     position: absolute;
+    background-color: rgba(#000, 0.3);
   }
 }
 
@@ -92,28 +132,46 @@
 }
 
 .card-description__title {
-  color: #fff;
+  color: #000;
   font-family: PT Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 171.429% */
   text-transform: uppercase;
+  @media (min-width: $width-tablet) {
+    color: #000;
+  }
+  @media (min-width: $width-desktop) {
+    color: #fff;
+  }
 }
 
 .card-description__author {
-  color: #fff;
+  color: #000;
   font-family: PT Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  @media (min-width: $width-tablet) {
+    color: #000;
+  }
+  @media (min-width: $width-desktop) {
+    color: #fff;
+  }
 }
 
 .card-like {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  @media (min-width: $width-tablet) {
+    color: #000;
+    margin-bottom: 0;
+  }
 }
 
 .card-like__button {
@@ -123,11 +181,19 @@
 }
 
 .button-like-icon {
-  fill: #fff;
+  fill: #000;
+  opacity: 0.3;
+  @media (min-width: $width-tablet) {
+    fill: #000;
+  }
+  @media (min-width: $width-desktop) {
+    fill: #fff;
+    opacity: 1;
+  }
 }
 
 .card-like__number {
-  color: #fff;
+  color: #000;
   font-family: PT Sans;
   font-size: 14px;
   font-style: normal;
@@ -135,10 +201,38 @@
   line-height: 24px; /* 171.429% */
   text-transform: uppercase;
   padding: 5px;
+  @media (min-width: $width-tablet) {
+    color: #000;
+  }
+  @media (min-width: $width-desktop) {
+    color: #fff;
+  }
 }
 
 // Конечный блок с текстом
 .catalog-footer {
-  margin-top: 63px;
-  margin-bottom: 66px;
+  margin-top: 48px;
+  margin-bottom: 33px;
+  @media (min-width: $width-tablet) {
+    margin-top: 60px;
+    margin-bottom: 66px;
+  }
+}
+
+.catalog-footer__title {
+  font-size: 18px;
+  margin-bottom: 20px;
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+  }
+  @media (min-width: $width-desktop) {
+
+  }
+}
+
+.catalog-footer__description {
+  font-size: 14px;
+  @media (min-width: $width-tablet) {
+    font-size: 21px;
+  }
 }
