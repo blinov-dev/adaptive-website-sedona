@@ -103,7 +103,8 @@
           <ul class="group-inputs__list">
             <li class="group-inputs__item">
               <label class="form-input">
-                <span class="form-input__title">Телефон*:</span>
+                <span class="form-input__title">
+                  <span class="form-input__title--additional">Контактный </span>Телефон*:</span>
 
                 <span class="form-input__container">
                   <input class="form-input__phone input" type="tel" value="Введите телефон">
@@ -121,7 +122,6 @@
             <li class="group-inputs__item">
               <label class="form-input">
                 <span class="form-input__title">Электронная почта*:</span>
-
                 <span class="form-input__container">
                   <input class="form-input__email input" type="email" value="Введите e-mail">
 
@@ -132,6 +132,7 @@
                         d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" />
                     </svg>
                   </span>
+                </span>
                 </span>
               </label>
             </li>
@@ -226,7 +227,6 @@
           </label>
         </fieldset>
 
-
         <div class="group-inputs group-buttons">
           <button class="main-form-button button">Отправить отзыв</button>
           <span class="required-fields">* — обязательные поля</span>
@@ -317,7 +317,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
@@ -330,5 +330,3 @@
 </body>
 
 </html>
-
-
