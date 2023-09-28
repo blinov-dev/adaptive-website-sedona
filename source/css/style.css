@@ -1358,8 +1358,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .form-header {
@@ -1401,9 +1400,11 @@ body {
 }
 
 .group-inputs {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   border: none;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -1639,6 +1640,9 @@ body {
     grid-column: 1/3;
   }
 }
+.group-place-visited .group-inputs__title {
+  text-align: center;
+}
 .group-place-visited .group-inputs__list {
   width: 100%;
   display: flex;
@@ -1649,6 +1653,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+.group-place-visited .group-inputs__item {
+  flex: 1 1 50%;
+}
+@media (min-width: 768px) {
+  .group-place-visited .group-inputs__item {
+    flex: 1 1 25%;
   }
 }
 

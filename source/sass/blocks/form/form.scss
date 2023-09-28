@@ -3,8 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 // Стили для формы
@@ -32,6 +31,7 @@
 // Стили для самой формы (Сетка гридами)
 .main-form {
   width: 100%;
+  // margin: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
   @media (min-width: $width-tablet) {
@@ -41,10 +41,13 @@
 
 // Стили для Фиелдсетов
 .group-inputs {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   border: none;
+  margin: 0 auto;
   margin-bottom: 50px;
+
 }
 
 // Стили для Легенды у фиелдсетов
@@ -191,7 +194,6 @@
   min-height: 58px;
   background-color: #e6e6e6;
 }
-
 .input-icon {
   fill: #000;
 }
@@ -201,7 +203,7 @@
   grid-column: 1 / 3;
   @media (min-width: $width-tablet) {
     grid-column: 1 / 2;
-    order: -1; // Для десктопа и планшета
+    order: -1;
   }
   @media (min-width: $width-desktop) {
   }
@@ -278,6 +280,10 @@
   }
   @media (min-width: $width-desktop) {
   }
+  & .group-inputs__title {
+    text-align: center;
+  }
+
   & .group-inputs__list {
     width: 100%;
     display: flex;
@@ -288,12 +294,12 @@
       flex-wrap: wrap;
     }
   }
-  // & .group-inputs__item {
-  //   flex: 1 1 50%;
-  //   @media (min-width: $width-tablet) {
-  //     flex: 1 1 25%;
-  //   }
-  
+  & .group-inputs__item {
+    flex: 1 1 50%;
+    @media (min-width: $width-tablet) {
+      flex: 1 1 25%;
+    }
+  }
 }
 
 // Стили для инпутов с отзывом
