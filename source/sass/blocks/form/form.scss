@@ -147,15 +147,12 @@
   }
   @media (min-width: $width-tablet) {
     grid-column: 2 / 3;
-    // & .input {
-    //   // position: relative;
-    //   // width: 90%;
-    // }
   }
 }
 
 // Стили для инпутов с Контактами
 .group-contacts {
+  background-color: #000;
   grid-column: 1 / 3;
   & .group-inputs__list {
     @media (min-width: $width-desktop) {
