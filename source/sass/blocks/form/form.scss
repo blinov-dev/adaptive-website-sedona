@@ -31,9 +31,9 @@
 // Стили для самой формы (Сетка гридами)
 .main-form {
   width: 100%;
-  // margin: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr 1fr;
   }
@@ -45,7 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-bottom: 50px;
 
 }

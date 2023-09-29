@@ -1392,6 +1392,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .main-form {
@@ -1404,7 +1405,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   border: none;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
