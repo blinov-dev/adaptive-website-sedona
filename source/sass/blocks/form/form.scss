@@ -143,9 +143,7 @@
     margin-left: 78px;
   }
   & .group-inputs__list {
-      align-items: end;
-
-
+    align-items: end;
   }
   @media (min-width: $width-tablet) {
     grid-column: 2 / 3;
