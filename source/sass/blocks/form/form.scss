@@ -62,7 +62,7 @@
   font-weight: 700;
   line-height: 26px; /* 123.81% */
   text-transform: uppercase;
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-bottom: 20px;
   @media (min-width: $width-tablet) {
     font-size: 21px;
@@ -142,15 +142,17 @@
   & .group-inputs__title {
     margin-left: 78px;
   }
+  & .group-inputs__list {
+      align-items: end;
+
+
+  }
   @media (min-width: $width-tablet) {
     grid-column: 2 / 3;
-    & .input {
-      position: relative;
-      width: 90%;
-    }
-    & .group-inputs__list {
-      align-items: end;
-    }
+    // & .input {
+    //   // position: relative;
+    //   // width: 90%;
+    // }
   }
 }
 
@@ -158,16 +160,10 @@
 .group-contacts {
   grid-column: 1 / 3;
   & .group-inputs__list {
-    width: 100%;
     @media (min-width: $width-desktop) {
       flex-direction: row;
       justify-content: space-between;
       gap: 80px;
-    }
-    & .group-inputs__item {
-      width: 100%;
-      @media (min-width: $width-desktop) {
-      }
     }
   }
 }
