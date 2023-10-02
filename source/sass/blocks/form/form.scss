@@ -49,7 +49,7 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  margin: 0 auto;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -62,7 +62,6 @@
   font-weight: 700;
   line-height: 26px; /* 123.81% */
   text-transform: uppercase;
-  // margin: 0 auto;
   margin-bottom: 20px;
   @media (min-width: $width-tablet) {
     font-size: 21px;
@@ -139,20 +138,16 @@
 // Стили для инпутов с ФИО
 .group-names {
   grid-column: 1 / 3;
-  & .group-inputs__title {
-    margin-left: 78px;
-  }
-  & .group-inputs__list {
-    align-items: end;
-  }
   @media (min-width: $width-tablet) {
     grid-column: 2 / 3;
+    & .group-inputs__list {
+      align-items: end;
+    }
   }
 }
 
 // Стили для инпутов с Контактами
 .group-contacts {
-  background-color: #000;
   grid-column: 1 / 3;
   & .group-inputs__list {
     @media (min-width: $width-desktop) {
@@ -161,26 +156,32 @@
       gap: 80px;
     }
   }
-}
-& .form-input {
-  flex-direction: column;
-  align-items: flex-start;
-  & .form-input__title--additional {
-    display: inline;
-    @media (min-width: $width-desktop) {
-      display: none;
+  & .group-inputs__item {
+    @media (min-width: $width-tablet) {
+      width: 100%;
     }
   }
-  @media (min-width: $width-desktop) {
-    align-items: center;
-    flex-direction: row;
+
+  & .form-input {
+    flex-direction: column;
+    align-items: flex-start;
+    & .form-input__title--additional {
+      display: inline;
+      @media (min-width: $width-desktop) {
+        display: none;
+      }
+    }
+    @media (min-width: $width-desktop) {
+      align-items: center;
+      flex-direction: row;
+    }
   }
-}
-& .input {
-  position: relative;
-  justify-content: flex-start;
-  @media (min-width: $width-desktop) {
-    width: 258px;
+  & .input {
+    position: relative;
+    justify-content: flex-start;
+    @media (min-width: $width-desktop) {
+      width: 258px;
+    }
   }
 }
 
