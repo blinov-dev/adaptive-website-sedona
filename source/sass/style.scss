@@ -19,7 +19,6 @@
 // Стили для основных текстовых блоков
 @import "blocks/text-block.scss";
 
-
 // Стили для главной страницы
 // Блок с преимуществами
 @import "blocks/index/adventages.scss";
@@ -28,18 +27,15 @@
 // Стили для секции с картой
 @import "blocks/index/map.scss";
 
-
 // Стили для кнопки в текстовых и других блоках
 @import "blocks/main-buttons.scss";
 
 // Стили основного футера
 @import "blocks/main-footer.scss";
 
-
 //Стили для каталога
 @import "blocks/catalog/catalog.scss";
 @import "blocks/catalog/video-player.scss";
-
 
 // Стили для формы
 @import "blocks/form/form.scss";
