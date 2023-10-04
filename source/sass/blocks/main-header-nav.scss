@@ -142,8 +142,6 @@
   @media (min-width: $width-tablet) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  @media (min-width: $width-desktop) {
-  }
 }
 
 .main-nav--opened .main-nav__list {
@@ -155,6 +153,16 @@
     position: static;
   }
 }
+
+// Стили для навигации в мобильном режиме при отключенном JS
+.main-nav--nojs .main-nav__list {
+  margin-top: 90px;
+  width: 100%;
+  background-color: rgba(129, 179, 210, 1);
+  z-index: 3;
+  position: static;
+}
+
 
 .main-nav__item {
   border-top: 1px solid rgba(0, 0, 0, 0.2);

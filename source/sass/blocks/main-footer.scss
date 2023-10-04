@@ -2,19 +2,19 @@
 .page-footer {
   width: 100%;
   display: flex;
-  margin: 30px 0;
+  margin: 30px auto;
+  justify-content: center;
 }
 
 .page-footer__container {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media (min-width: $width-tablet) {
+    width: 85%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-  }
-  @media (min-width: $width-desktop) {
   }
 }
 
@@ -36,8 +36,6 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
   }
-  @media (min-width: $width-desktop) {
-  }
 }
 
 // Ссылки на соцсети
@@ -47,8 +45,6 @@
   margin-bottom: 40px;
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
-  }
-  @media (min-width: $width-desktop) {
   }
 }
 
