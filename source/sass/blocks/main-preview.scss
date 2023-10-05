@@ -11,13 +11,18 @@
     height: 518px;
   }
   @media (min-width: $width-desktop) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+      background-size: 2500px auto;
+      background-size: contain;
+    }
   }
 }
 
 .main-preview__img {
   margin-top: 90px;
-  width: 300px;
-  height: 200px;
+  width: 284px;
+  height: 214px;
   @media (min-width: $width-tablet) {
     margin-top: 77px;
     width: 460px;

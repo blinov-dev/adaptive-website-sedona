@@ -52,8 +52,11 @@
 }
 
 .adventages__item {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: $width-tablet) {
+    flex-wrap: nowrap;
+  }
 }
 
 .adventage--big {
@@ -61,11 +64,11 @@ flex-wrap: wrap;
   .adventage {
     @media (min-width: $width-tablet) {
       max-width: 256px;
+    }
+    @media (min-width: $width-desktop) {
+      max-width: 400px;
+    }
   }
-  @media (min-width: $width-desktop) {
-    max-width: 400px;
-  }
-}
 }
 
 .adventage--small {
@@ -74,7 +77,6 @@ flex-wrap: wrap;
     grid-column: auto;
   }
 }
-
 
 // Основное преимущество
 .adventage {
@@ -125,18 +127,9 @@ flex-wrap: wrap;
 
 .adventage__img {
   flex: 1 1 auto;
-  width: 192px;
-  background-color: #eee;
-  height: 260px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &.img-city {
-    background-image: url("/img/adventages/photo-city.jpg");
-    background-position: 75%;
-  }
-  &.img-bridge {
-    background-image: url("/img/adventages/photo-bridge.jpg");
-    background-position: 50%;
+  & img {
+    width: 100%;
+    display: block;
   }
 }
 

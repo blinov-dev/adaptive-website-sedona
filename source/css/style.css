@@ -132,17 +132,17 @@ body {
   top: 0;
   left: 50%;
   margin-left: -50px;
-  background-image: url(/img/logo.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
   z-index: 2;
 }
 @media (min-width: 1200px) {
   .main-logo {
-    background-image: url(/img/logo-desktop.svg);
-    min-width: 187px;
+    width: 187px;
     height: 97px;
     margin-left: -93px;
+  }
+  .main-logo img {
+    width: 187px;
+    height: 97px;
   }
 }
 
@@ -366,10 +366,18 @@ body {
     height: 518px;
   }
 }
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-preview {
+    background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+    background-size: 2500px auto;
+    background-size: contain;
+  }
+}
+
 .main-preview__img {
   margin-top: 90px;
-  width: 300px;
-  height: 200px;
+  width: 284px;
+  height: 214px;
 }
 @media (min-width: 768px) {
   .main-preview__img {
@@ -546,6 +554,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .adventages__item {
+    flex-wrap: nowrap;
+  }
+}
 
 .adventage--big {
   grid-column: 1/4;
@@ -622,19 +635,10 @@ body {
 
 .adventage__img {
   flex: 1 1 auto;
-  width: 192px;
-  background-color: #eee;
-  height: 260px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.adventage__img.img-city {
-  background-image: url("/img/adventages/photo-city.jpg");
-  background-position: 75%;
-}
-.adventage__img.img-bridge {
-  background-image: url("/img/adventages/photo-bridge.jpg");
-  background-position: 50%;
+.adventage__img img {
+  width: 100%;
+  display: block;
 }
 
 .adventage--no-img {

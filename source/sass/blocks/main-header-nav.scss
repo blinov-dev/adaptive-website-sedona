@@ -13,25 +13,17 @@
   top: 0;
   left: 50%;
   margin-left: -50px;
-  background-image: url(/img/logo.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
   z-index: 2;
-  @media (min-width: $width-tablet) {
-  }
   @media (min-width: $width-desktop) {
-    background-image: url(/img/logo-desktop.svg);
-    min-width: 187px;
+    width: 187px;
     height: 97px;
     margin-left: -93px;
+    & img {
+      width: 187px;
+      height: 97px;
+    }
   }
 }
-
-
-
-
-
-
 
 .main-nav {
   position: relative;
@@ -208,7 +200,6 @@
 .main-nav__link {
   display: block;
   color: #fff;
-  // font-family: PT Sans;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
