@@ -15,7 +15,8 @@
     <a class="main-logo" href="index.html" aria-label="Переход на главную страницу сайта Седоны">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-        <img src="img/logo.svg" width="102" height="84" alt="Логотип Седоны">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </picture>
     </a>
 
@@ -61,7 +62,7 @@
         <div class="adventages-header text-block">
           <h2 class="visually-hidden">Преимущества города Седоны</h2>
           <p class="adventages-header__title text-block__title">
-            Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+            Седона - небольшой <br> городок в Аризоне,<br> заслуживающий большего!
           </p>
           <p class="adventages-header__description text-block__description">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
@@ -76,7 +77,7 @@
               <h3 class="adventage__title text-block__title">Настоящий <br>городок</h3>
               <span class="adventage__number">— №1 —</span>
               <p class="adventage__description text-block__description">
-                Седона — не аттракцион для туристов,<br> там течёт своя жизнь
+                Седона не аттракцион для туристов,<br> там течёт своя жизнь
               </p>
             </div>
           </div>
@@ -92,30 +93,30 @@
         </li>
         <li class="adventages__item adventage--big">
           <ul class="additional-adventages__list">
-            <li class="additional-adventages__item">
+            <li class="additional-adventages__item first-additional-item">
               <div class="additional-adventage text-block">
-                <h4 class="additional-adventage__title add-adventage-housing text-block__title">Жильё</h4>
+                <h4 class="additional-adventage__title add-adventage-housing text-block__title">Жилье</h4>
                 <p class="additional-adventage__description text-block__description">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </div>
 
             </li>
-            <li class="additional-adventages__item change-position">
+            <li class="additional-adventages__item second-additional-item">
+              <div class="additional-adventage text-block">
+                <h4 class="additional-adventage__title add-adventage-souvenir text-block__title">Сувениры</h4>
+                <p class="additional-adventage__description text-block__description">
+                  Не только китайского, но и местного производства!
+                </p>
+              </div>
+
+            </li>
+            <li class="additional-adventages__item third-additional-item">
               <div class="additional-adventage text-block">
                 <h4 class="additional-adventage__title add-adventage-food text-block__title">Еда</h4>
                 <p class="additional-adventage__description text-block__description">
                   Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!
-                </p>
-              </div>
-
-            </li>
-            <li class="additional-adventages__item">
-              <div class="additional-adventage text-block">
-                <h4 class="additional-adventage__title add-adventage-souvenir text-block__title">Сувениры</h4>
-                <p class="additional-adventage__description text-block__description">
-                  Не только китайского, но и настоящего местного производства!
                 </p>
               </div>
 
@@ -191,19 +192,13 @@
       </div>
     </section>
 
-    <section class="map">
+    <section class="main-map">
       <h2 class="visually-hidden">Где находится Седона</h2>
 
-      <div class="map__container">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="img/adventages/map/map-desktop@1x.jpg 1x, img/adventages/map/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/adventages//map/map-tablet@1x.jpg 1x, img/adventages//map/map-tablet@2x.jpg 2x">
-          <img class="map__img" src="img/adventages/map/map-mobile@1x.jpg" srcset="img/adventages/map/map-mobile@2x.jpg"
-            width="1200" height="350" alt="Карта с геолокацией места нахождения города Седоны">
-        </picture>
-      </div>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328706.202207583!2d-111.86448203519629!3d35.43771724583649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1696679096567!5m2!1sru!2sru"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
@@ -231,13 +226,13 @@
           </a>
         </li>
         <li class="socials__item">
-            <a href="#" class="socials__link">
-              <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
+          <a href="#" class="socials__link">
+            <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
               viewBox="0 0 20 14">
               <path fill="#fff"
                 d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" />
             </svg>
-            </a>
+          </a>
         </li>
       </ul>
 

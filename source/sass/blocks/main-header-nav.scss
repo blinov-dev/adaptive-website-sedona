@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -51px;
   z-index: 2;
   @media (min-width: $width-desktop) {
     width: 187px;
@@ -37,7 +37,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 13px;
-  right: 17px;
+  right: 18px;
   z-index: 4;
   display: block;
   width: 26px;
@@ -64,8 +64,8 @@
 .main-nav--closed .toggle-icon {
   position: absolute;
   width: 22px;
-  height: 4px;
-  top: 0;
+  height: 5px;
+  top: 5px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -76,7 +76,7 @@
     position: absolute;
     width: 22px;
     height: 4px;
-    top: -10px;
+    top: -9px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -88,7 +88,7 @@
     position: absolute;
     width: 22px;
     height: 4px;
-    top: 10px;
+    top: 9px;
     right: 0;
     bottom: 0;
     left: 0;

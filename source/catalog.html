@@ -15,7 +15,8 @@
     <a class="main-logo" href="index.html" aria-label="Переход на главную страницу сайта Седоны">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-        <img src="img/logo.svg" width="102" height="84" alt="Логотип Седоны">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </picture>
     </a>
 
@@ -51,11 +52,8 @@
   <main class="page-main">
     <h1 class="visually-hidden">Фото и видео мест города Седоны</h1>
     <div class="main-preview main-preview-catalog">
-      <svg class="main-preview__img main-preview-catalog__img" xmlns="http://www.w3.org/2000/svg" width="460"
-        height="80" fill="none" viewBox="0 0 460 80">
-        <path fill="#fff"
-          d="M44.3 21.7c-3.6-3-8.1-5-12.9-5-3.6 0-8.3 2.1-8.3 6.3 0 4.4 5.3 6.1 8.6 7.1l5 1.5c10.4 3.1 18.5 8.3 18.5 20.4 0 7.4-1.8 15.1-7.7 20.1-5.9 5-13.7 7-21.2 7-9.4 0-18.7-3.2-26.3-8.5l8.3-15.7c4.9 4.3 10.6 7.7 17.3 7.7 4.6 0 9.4-2.3 9.4-7.5 0-5.5-7.6-7.3-11.8-8.5-12.4-3.3-20.4-6.5-20.4-21C2.8 10.4 13.6.5 28.6.5 36.1.5 45.4 2.9 52 6.7l-7.7 15ZM91.6 19v12.5h21.9V48H91.6v12.9h23.2v16.5H72.2V2.5h42.6V19H91.6ZM129.2 2.5h27.6c20.8 0 38 16.4 38 37.4s-17.3 37.4-38 37.4h-27.6V2.5Zm19.5 58.3h4.4c11.6 0 21.5-6.4 21.5-20.9 0-13.4-8.8-20.9-21.3-20.9h-4.6v41.8ZM286.7 38.5c0 24.2-17.4 41.3-41.4 41.3s-41.4-17.1-41.4-41.3c0-22.6 19.9-38.5 41.4-38.5s41.4 15.9 41.4 38.5Zm-62.6.1c0 12.9 9.5 22.3 21.1 22.3 11.6 0 21.1-9.4 21.1-22.3 0-10.3-9.5-19.8-21.1-19.8-11.5.1-21.1 9.5-21.1 19.8ZM297 2.5h19.5l35.6 45.8h.2V2.5h19.5v74.8h-19.5l-35.6-45.9h-.2v45.9H297V2.5ZM407.1 64.3l-5.2 13h-20.6l28.8-74.8h21.2l28.2 74.8h-20.7l-4.9-13h-26.8Zm13.6-38.7h-.2l-8 23.8h16.2l-8-23.8Z" />
-      </svg>
+      <img class="main-preview__img main-preview-catalog__img" src="img/main-preview/main-preview-img-add.svg" width="229" height="39"
+      alt="Добро пожаловать в город Седона">
     </div>
 
     <section class="catalog">
@@ -72,8 +70,12 @@
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--big">
           <figure class="card card--big">
-            <img class="card__img" src="img/catalog/non-native-spaces_desktop.jpg" alt="Закат на дороге" width="1200"
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/non-native-spaces_desktop@1x.jpg, img/catalog/non-native-spaces_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/non-native-spaces_tablet@1x.jpg, img/catalog/non-native-spaces_tablet@2x.jpg 2x">
+              <img class="card__img" src="img/catalog/non-native-spaces_mobile@1x.jpg" srcset="img/catalog/non-native-spaces_mobile@2x.jpg 2x" alt="Закат на дороге" width="1200"
               height="400">
+            </picture>
 
             <div class="card__info">
               <div class="card-description">
@@ -97,8 +99,14 @@
         </li>
         <li class="catalog__item catalog__item--small">
           <figure class="card card--small">
-            <img class="card__img" src="img/catalog/local-vegetation_desktop.jpg" alt="Кактус на фоне горы" width="400"
-              height="267">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/local_vegetation_desktop@1x.jpg, img/catalog/local_vegetation_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/local_vegetation_tablet@1x.jpg, img/catalog/local_vegetation_tablet@2x.jpg 2x">
+                <img class="card__img" src="img/catalog/local_vegetation_mobile@1x.jpg" srcset="img/catalog/local_vegetation_mobile@2x.jpg" alt="Кактус на фоне горы" width="400"
+                height="267">
+              </picture>
+
+
 
             <div class="card__info">
               <div class="card-description">
@@ -122,9 +130,12 @@
         </li>
         <li class="catalog__item catalog__item--small">
           <figure class="card card--small">
-            <img class="card__img" src="img/catalog/road-to-the-north_desktop.jpg" alt="Дорога в каньоне" width="400"
-              height="267">
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/road-to-the-north_desktop@1x.jpg, img/catalog/road-to-the-north_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/road-to-the-north_tablet@1x.jpg, img/catalog/road-to-the-north_tablet@2x.jpg 2x">
+                <img class="card__img" src="img/catalog/road-to-the-north_mobile@1x.jpg" srcset="img/catalog/road-to-the-north_mobile@2x.jpg" alt="Дорога в каньоне" width="400"
+                height="267">
+              </picture>
             <div class="card__info">
               <div class="card-description">
                 <h3 class="card-description__title">Дорога на север</h3>
@@ -147,8 +158,12 @@
         </li>
         <li class="catalog__item catalog__item--small">
           <figure class="card card--small">
-            <img class="card__img" src="img/catalog/devils-bridge_desktop.jpg" alt="Горный мост" width="400"
-              height="267">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/devils-bridge_desktop@1x.png, img/catalog/devils-bridge_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/devils-bridge_tablet@1x.png, img/catalog/devils-bridge_tablet@2x.png 2x">
+                <img class="card__img" src="img/catalog/devils-bridge_mobile@1x.jpg" srcset="img/catalog/devils-bridge_mobile@2x.jpg" alt="Горный мост" width="400"
+                height="267">
+              </picture>
 
             <div class="card__info">
               <div class="card-description">

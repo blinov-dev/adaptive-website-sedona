@@ -7,84 +7,95 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+  }
   @media (min-width: $width-tablet) {
     height: 518px;
-  }
-  @media (min-width: $width-desktop) {
     @media (min-resolution: 2dppx) {
       background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
-      background-size: 2500px auto;
-      background-size: contain;
     }
   }
-}
-
-.main-preview__img {
-  margin-top: 90px;
-  width: 284px;
-  height: 214px;
-  @media (min-width: $width-tablet) {
-    margin-top: 77px;
-    width: 460px;
-    height: 350px;
-  }
-  @media (min-width: $width-desktop) {
-    margin-top: 78px;
+  & .main-preview__img {
+    margin-top: 90px;
+    width: 284px;
+    height: 214px;
+    @media (min-width: $width-tablet) {
+      margin-top: 77px;
+      width: 460px;
+      height: 350px;
+    }
+    @media (min-width: $width-desktop) {
+      margin-top: 78px;
+    }
   }
 }
 
 // Превью у каталога
 .main-preview-catalog {
   height: 160px;
-  text-align: center;
-  background-color: rgb(97 80 72 / 100%);
-  background-image: url("/img/main-preview/main-preview-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% bottom;
+  background-image: url("/img/main-preview/main-preview-bg-add@1x.jpg");
+  background-position: bottom;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/main-preview/main-preview-bg-add@2x.jpg");
+    background-size: cover;
+  }
   @media (min-width: $width-tablet) {
     height: 290px;
-  }
+     background-image: url("/img/main-preview/main-preview-bg.jpg");
+     background-size: 1200px auto;
+     @media (min-resolution: 2dppx) {
+       background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+       background-size: 1200px auto;
+    }
+   }
   @media (min-width: $width-desktop) {
     height: 300px;
   }
+  & .main-preview-catalog__img {
+    height: 40px;
+    margin-top: 50px;
+    @media (min-width: $width-tablet) {
+      height: auto;
+      margin-top: 95px;
+    }
+    @media (min-width: $width-desktop) {
+      margin-top: 100px;
+    }
+  }
 }
 
-.main-preview-catalog__img {
-  height: 40px;
-  margin-top: 50px;
-  @media (min-width: $width-tablet) {
-    height: auto;
-    margin-top: 95px;
-  }
-  @media (min-width: $width-desktop) {
-    margin-top: 100px;
-  }
-}
 
 // Превью у формы
 .main-preview-form {
   height: 160px;
-  text-align: center;
-  background-color: rgb(97 80 72 / 100%);
-  background-image: url("/img/main-preview/main-preview-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% bottom;
+  background-image: url("/img/main-preview/main-preview-bg-add@1x.jpg");
+  background-position: bottom;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/main-preview/main-preview-bg-add@2x.jpg");
+    background-size: cover;
+  }
   @media (min-width: $width-tablet) {
     height: 290px;
-  }
+     background-image: url("/img/main-preview/main-preview-bg.jpg");
+     background-size: 1200px auto;
+     @media (min-resolution: 2dppx) {
+       background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+       background-size: 1200px auto;
+    }
+   }
   @media (min-width: $width-desktop) {
     height: 300px;
   }
-}
-
-.main-preview-form__img {
-  height: 40px;
-  margin-top: 50px;
-  @media (min-width: $width-tablet) {
-    height: auto;
-    margin-top: 95px;
-  }
-  @media (min-width: $width-desktop) {
-    margin-top: 100px;
+  & .main-preview-form__img {
+    height: 40px;
+    margin-top: 50px;
+    @media (min-width: $width-tablet) {
+      height: auto;
+      margin-top: 95px;
+    }
+    @media (min-width: $width-desktop) {
+      margin-top: 100px;
+    }
   }
 }
