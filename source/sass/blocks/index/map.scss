@@ -1,25 +1,10 @@
 // Стили для секции с картой
-.map__img {
-  position: relative;
+.map__container {
   width: 100%;
   height: 350px;
-  background-image: url("/img/map/map-mobile.jpg");
-  background-position: 50%;
-  &::after {
-    content: "";
-    width: 27px;
-    height: 27px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -13px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cpath d='M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27Z' fill='white'/%3E%3Cpath d='M13.5 21.8996C18.1392 21.8996 21.9 18.1388 21.9 13.4996C21.9 8.86042 18.1392 5.09961 13.5 5.09961C8.86078 5.09961 5.09998 8.86042 5.09998 13.4996C5.09998 18.1388 8.86078 21.8996 13.5 21.8996Z' fill='%2381B3D3'/%3E%3C/svg%3E");
-  }
-  @media (min-width: $width-tablet) {
-    background-image: url("/img/map/map-desktop.jpg");
-    background-position: 50%;
-    &::after {
-      display: none;
-    }
-  }
+}
+
+.map__img {
+  display: block;
+  width: 100%;
 }

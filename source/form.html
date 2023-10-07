@@ -12,8 +12,11 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="main-logo" href="index.html">
-      <span class="visually-hidden">Логотип сайта Седоны</span>
+    <a class="main-logo" href="index.html" aria-label="Переход на главную страницу сайта Седоны">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+        <img src="img/logo.svg" width="102" height="84" alt="Логотип Седоны">
+      </picture>
     </a>
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -26,7 +29,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--current-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и Видео</a>
@@ -35,7 +38,7 @@
             <span class="placeforlogo"></span>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current-link" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">HTML academy</a>
@@ -259,13 +262,13 @@
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
-            <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
+            <a href="#" class="socials__link">
+              <svg class="socials-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
               viewBox="0 0 20 14">
               <path fill="#fff"
                 d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" />
             </svg>
-          </a>
+            </a>
         </li>
       </ul>
 
@@ -279,7 +282,6 @@
         </a>
       </div>
     </div>
-
   </footer>
 
   <div class="modal-accepted visually-hidden">
