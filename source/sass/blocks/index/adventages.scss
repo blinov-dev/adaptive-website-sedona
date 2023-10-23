@@ -24,16 +24,17 @@
 }
 
 .adventages-header {
-  br {
-    // display: none;
-  }
   margin-top: 32px;
   margin-bottom: 20px;
+  br {
+    display: block;
+  }
   @media (min-width: $width-tablet) {
     br {
-      display: block;
+      display: none;
     }
-    margin-top: 48px;
+    max-width: 520px;
+    margin-top: 44px;
     margin-bottom: 41px;
   }
   @media (min-width: $width-desktop) {
@@ -92,6 +93,7 @@
   background: #81b3d2;
   &.first-adventage {
     padding-top: 25px;
+    padding-bottom: 5px;
   }
   br {
     display: none;
@@ -117,7 +119,7 @@
 
 .adventage__title {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #fff;
 }
 .adventage__number {
@@ -126,7 +128,7 @@
 }
 .adventage__description {
   color: #fff;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 }
 
 .adventage__img {
@@ -142,12 +144,15 @@
   background: #eee;
   .adventage__title {
     color: #000;
+    margin-top: 25px;
   }
   .adventage__number {
     color: #333;
   }
   .adventage__description {
     color: #333;
+    margin-bottom: 26px;
+    max-width: 250px;
   }
 }
 
@@ -169,19 +174,16 @@
     margin-top: 35px;
   }
   &.second-additional-item {
-    margin-top: 25px;
+    margin-top: 27px;
+    @media (min-width: $width-tablet) {
+      order: 1;
+  }
   }
   &.third-additional-item {
     margin-top: 27px;
   }
-
-  &.change-position {
-    order: 3;
-  }
-  @media (min-width: $width-tablet) {
-    &.change-position {
-      order: 0;
-    }
+  &:last-child {
+    margin-bottom: 36px;
   }
 }
 
@@ -219,26 +221,6 @@
     }
   }
 }
-.add-adventage-food {
-  &::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -50px;
-    width: 40px;
-    height: 35px;
-    background-image: url("/img/adventages/advetages-description-icon/icon-burger.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    @media (min-width: $width-tablet) {
-      top: 60px;
-      left: 50%;
-      width: 76px;
-      height: 68px;
-      margin-left: -37px;
-    }
-  }
-}
 .add-adventage-souvenir {
   &::before {
     content: "";
@@ -255,6 +237,26 @@
       left: 50%;
       width: 64px;
       height: 75px;
+      margin-left: -37px;
+    }
+  }
+}
+.add-adventage-food {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -50px;
+    width: 40px;
+    height: 35px;
+    background-image: url("/img/adventages/advetages-description-icon/icon-burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (min-width: $width-tablet) {
+      top: 60px;
+      left: 50%;
+      width: 76px;
+      height: 68px;
       margin-left: -37px;
     }
   }

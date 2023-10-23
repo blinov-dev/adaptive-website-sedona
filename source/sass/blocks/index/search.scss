@@ -1,11 +1,10 @@
 // Секция поиска гостиниц
 .search {
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
   margin-bottom: 50px;
   @media (min-width: $width-tablet) {
     max-width: 458px;
-
     margin-bottom: 50px;
   }
   @media (min-width: $width-desktop) {
@@ -24,5 +23,5 @@
 
 .search__description {
   line-height: 24px;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }

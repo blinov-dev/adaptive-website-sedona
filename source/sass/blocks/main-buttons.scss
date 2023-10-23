@@ -5,13 +5,11 @@
   background-color: #81b3d2;
   color: #fff;
   text-align: center;
-  // font-family: PT Sans;
   font-size: 21px;
-  // font-style: normal;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  padding: 15px 0;
+  padding: 16px 0;
   border: none;
   cursor: pointer;
   &:hover {
@@ -20,12 +18,6 @@
   &:active {
     color: rgba(#fff,  0.3);
     background-color: #5496bd;
-  }
-  @media (min-width: $width-tablet) {
-    // max-width: 458px;
-  }
-  @media (min-width: $width-desktop) {
-
   }
 }
 
