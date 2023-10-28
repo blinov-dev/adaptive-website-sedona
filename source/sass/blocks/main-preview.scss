@@ -42,13 +42,13 @@
   }
   @media (min-width: $width-tablet) {
     height: 290px;
-     background-image: url("/img/main-preview/main-preview-bg.jpg");
-     background-size: 1200px auto;
-     @media (min-resolution: 2dppx) {
-       background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
-       background-size: 1200px auto;
+    background-image: url("/img/main-preview/main-preview-bg.jpg");
+    background-size: 1200px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+      background-size: 1200px auto;
     }
-   }
+  }
   @media (min-width: $width-desktop) {
     height: 300px;
   }
@@ -65,7 +65,6 @@
   }
 }
 
-
 // Превью у формы
 .main-preview-form {
   height: 160px;
@@ -77,13 +76,13 @@
   }
   @media (min-width: $width-tablet) {
     height: 290px;
-     background-image: url("/img/main-preview/main-preview-bg.jpg");
-     background-size: 1200px auto;
-     @media (min-resolution: 2dppx) {
-       background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
-       background-size: 1200px auto;
+    background-image: url("/img/main-preview/main-preview-bg.jpg");
+    background-size: 1200px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/main-preview/main-preview-bg@2x.jpg");
+      background-size: 1200px auto;
     }
-   }
+  }
   @media (min-width: $width-desktop) {
     height: 300px;
   }
